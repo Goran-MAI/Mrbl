@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\SandboxApp.cpp">
+    <ClCompile Include="src\Tribalion.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>
