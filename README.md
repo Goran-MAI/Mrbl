@@ -16,11 +16,11 @@ The structure is based on TheCherno's tutorials:
 
 ## Project Structure
 
-```
+```text
 Mrbl/
 └── src/
     ├── Mrbl.h
-    └── Mrbl
+    └── Mrbl/
         ├── Application.h
         ├── Application.cpp
         ├── Core.h
@@ -29,3 +29,6 @@ Tribalion/
 └── src/
     └── Tribalion.cpp
 ```
+
+
+Note: This project is for learning purposes and follows the engine tutorials by TheCherno.
