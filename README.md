@@ -16,6 +16,7 @@ The structure is based on TheCherno's tutorials:
 
 ## Project Structure
 
+```
 Mrbl/
 └── src/
     ├── Mrbl.h
@@ -27,3 +28,4 @@ Mrbl/
 Tribalion/
 └── src/
     └── Tribalion.cpp
+```
