@@ -4,6 +4,8 @@
 #include "spdlog/spdlog.h"
 #include "spdlog/sinks/stdout_color_sinks.h"
 
+// Git: https://github.com/gabime/spdlog
+
 namespace Mrbl {
 
 	class MRBL_API Log
