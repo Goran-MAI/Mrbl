@@ -26,19 +26,23 @@ project "Mrbl"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "mrblpch.h"
+	pchsource "Mrbl/src/mrblpch.cpp"
+
 	files {
 		"%{prj.name}/src/**.h",
 		"%{prj.name}/src/**.cpp"
 	}
 
 	includedirs {
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/src",
+		"%{prj.name}/vendor/spdlog/include"    
 	}
 
 	filter "system:windows"
 		cppdialect "C++17"
 		staticruntime "On"
-		systemversion "10.0.26100.0"
+		systemversion "latest"
 	
 
 		defines {
@@ -93,7 +97,7 @@ project "Tribalion"
 	filter "system:windows"
 		cppdialect "C++17"
 		staticruntime "On"
-		systemversion "10.0.26100.0"
+		systemversion "latest"
 
 		defines {
 			"MRBL_PLATFORM_WINDOWS"

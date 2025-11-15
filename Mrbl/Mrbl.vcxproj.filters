@@ -4,6 +4,9 @@
     <Filter Include="Mrbl">
       <UniqueIdentifier>{B23A897C-9E71-8A0D-475E-70103374060F}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Mrbl\Events">
+      <UniqueIdentifier>{56AADFE3-C25F-58D9-4B54-52B0B7084FDD}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Mrbl.h" />
@@ -16,9 +19,22 @@
     <ClInclude Include="src\Mrbl\EntryPoint.h">
       <Filter>Mrbl</Filter>
     </ClInclude>
+    <ClInclude Include="src\Mrbl\Events\ApplicationEvent.h">
+      <Filter>Mrbl\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Mrbl\Events\Event.h">
+      <Filter>Mrbl\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Mrbl\Events\KeyEvent.h">
+      <Filter>Mrbl\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Mrbl\Events\MouseEvent.h">
+      <Filter>Mrbl\Events</Filter>
+    </ClInclude>
     <ClInclude Include="src\Mrbl\Log.h">
       <Filter>Mrbl</Filter>
     </ClInclude>
+    <ClInclude Include="src\mrblpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Mrbl\Application.cpp">
@@ -27,5 +43,6 @@
     <ClCompile Include="src\Mrbl\Log.cpp">
       <Filter>Mrbl</Filter>
     </ClCompile>
+    <ClCompile Include="src\mrblpch.cpp" />
   </ItemGroup>
 </Project>

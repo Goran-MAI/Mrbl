@@ -1,3 +1,4 @@
+#include "mrblpch.h"
 #include "Log.h"
 
 namespace Mrbl {

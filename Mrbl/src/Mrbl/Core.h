@@ -9,3 +9,6 @@
 #else
 	#error Mrbl only supports Windows!
 #endif
+
+// used for the eventCategory definition
+#define BIT(x) (1 << x)

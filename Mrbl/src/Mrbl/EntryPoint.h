@@ -1,11 +1,10 @@
 #pragma once
-
 #ifdef MRBL_PLATFORM_WINDOWS
 
 extern Mrbl::Application* Mrbl::CreateApplication(); // Deklaration, Implementation kommt aus SandboxApp
 
-int main(int argc, char** argv) { // Universeller Einstiegspunkt für jede mögliche App, die Mrbl::Application erbt.
-	
+int main(int argc, char** argv) { // Universeller Einstiegspunkt fÃ¼r jede mÃ¶gliche App, die Mrbl::Application erbt.
+
 
 	Mrbl::Log::Init();
 	MRBL_CORE_WARN("Initialized Log!");
