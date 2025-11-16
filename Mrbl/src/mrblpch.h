@@ -12,6 +12,8 @@
 #include<unordered_map>
 #include<unordered_set>
 
+#include "Mrbl/Log.h"
+
 #ifdef MRBL_PLATFORM_WINDOWS
 	#include <Windows.h>
 #endif

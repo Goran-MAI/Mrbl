@@ -7,6 +7,12 @@
     <Filter Include="Mrbl\Events">
       <UniqueIdentifier>{56AADFE3-C25F-58D9-4B54-52B0B7084FDD}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Mrbl.h" />
@@ -34,6 +40,12 @@
     <ClInclude Include="src\Mrbl\Log.h">
       <Filter>Mrbl</Filter>
     </ClInclude>
+    <ClInclude Include="src\Mrbl\Window.h">
+      <Filter>Mrbl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
     <ClInclude Include="src\mrblpch.h" />
   </ItemGroup>
   <ItemGroup>
@@ -42,6 +54,9 @@
     </ClCompile>
     <ClCompile Include="src\Mrbl\Log.cpp">
       <Filter>Mrbl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\mrblpch.cpp" />
   </ItemGroup>

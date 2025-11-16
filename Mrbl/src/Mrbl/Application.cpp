@@ -2,12 +2,13 @@
 #include "Application.h"
 
 #include "Mrbl/Events/ApplicationEvent.h"
-#include "Mrbl/Log.h"
+#include <GLFW/glfw3.h>
 
 namespace Mrbl {
 
 	Application::Application()
 	{
+		m_Window = std::unique_ptr<Window>(Window::Create());
 	}
 
 	Application::~Application()
@@ -16,18 +17,10 @@ namespace Mrbl {
 
 	void Application::Run()
 	{
-		WindowResizeEvent e(1200, 720);
-
-		if (e.IsInCategory(EventCategoryApplication)) {
-			MRBL_TRACE(e);
-		}
-		if (e.IsInCategory(EventCategoryInput)) {
-			MRBL_TRACE(e);
-		}
-
-
-		while (true) {
-			// endless loop
+		while (m_Running) {
+			glClearColor(1, 1, 1, 1);
+			glClear(GL_COLOR_BUFFER_BIT);
+			m_Window->OnUpdate();
 		}
 	}
 }
