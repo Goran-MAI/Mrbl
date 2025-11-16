@@ -3,7 +3,6 @@
 #include "mrblpch.h"
 
 
-
 namespace Mrbl {
 
 	// Events in Mrbl are currently blocking, meaning when an event occurs,
@@ -68,7 +67,7 @@ namespace Mrbl {
 		template<typename T>
 		bool Dispatch(EventFn<T> func) {
 			if(m_Event.GetEventType() == T::GetStaticType()) {
-				m_Event.m_Handeled = func(*(T*)&m_Event);
+				m_Event.m_Handled = func(*(T*)&m_Event);
 				return true;
 			}
 			return false;
