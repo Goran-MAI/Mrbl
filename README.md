@@ -41,24 +41,15 @@ The structure is based on TheCherno's tutorials:
 │  │  └─ mrblpch.h
 │  ├─ vendor
 │  │  └─ spdlog
-│  │     ├─ LICENSE
-│  │     ├─ README.md
 |  |     └─ . . . 
-│  ├─ Mrbl.vcxproj
-│  ├─ Mrbl.vcxproj.filters
-│  ├─ Mrbl.vcxproj.user
-│  └─ projektstruktur.txt
+│  │  └─ GLFW
+|  |     └─ . . . 
 ├─ Tribalion
 │  ├─ src
 │  │  └─ Tribalion.cpp
-│  ├─ Tribalion.vcxproj
-│  └─ Tribalion.vcxproj.user
 ├─ vendor
-├─ .gitignore
-├─ .gitmodules
 ├─ GenerateProjects.bat
 ├─ LICENSE
-├─ Mrbl.sln
 ├─ premake5.lua
 └─ README.md
 
