@@ -17,17 +17,51 @@ The structure is based on TheCherno's tutorials:
 ## Project Structure
 
 ```text
-Mrbl/
-└── src/
-    ├── Mrbl.h
-    └── Mrbl/
-        ├── Application.h
-        ├── Application.cpp
-        ├── Core.h
-        └── EntryPoint.h
-Tribalion/
-└── src/
-    └── Tribalion.cpp
+├─ Mrbl
+│  ├─ src
+│  │  ├─ Mrbl
+│  │  │  ├─ Events
+│  │  │  │  ├─ ApplicationEvent.h
+│  │  │  │  ├─ Event.h
+│  │  │  │  ├─ KeyEvent.h
+│  │  │  │  └─ MouseEvent.h
+│  │  │  ├─ Application.cpp
+│  │  │  ├─ Application.h
+│  │  │  ├─ Core.h
+│  │  │  ├─ EntryPoint.h
+│  │  │  ├─ Log.cpp
+│  │  │  ├─ Log.h
+│  │  │  └─ Window.h
+│  │  ├─ Platform
+│  │  │  └─ Windows
+│  │  │     ├─ WindowsWindow.cpp
+│  │  │     └─ WindowsWindow.h
+│  │  ├─ Mrbl.h
+│  │  ├─ mrblpch.cpp
+│  │  └─ mrblpch.h
+│  ├─ vendor
+│  │  └─ spdlog
+│  │     ├─ LICENSE
+│  │     ├─ README.md
+|  |     └─ . . . 
+│  ├─ Mrbl.vcxproj
+│  ├─ Mrbl.vcxproj.filters
+│  ├─ Mrbl.vcxproj.user
+│  └─ projektstruktur.txt
+├─ Tribalion
+│  ├─ src
+│  │  └─ Tribalion.cpp
+│  ├─ Tribalion.vcxproj
+│  └─ Tribalion.vcxproj.user
+├─ vendor
+├─ .gitignore
+├─ .gitmodules
+├─ GenerateProjects.bat
+├─ LICENSE
+├─ Mrbl.sln
+├─ premake5.lua
+└─ README.md
+
 ```
 
 

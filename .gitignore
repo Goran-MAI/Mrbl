@@ -18,3 +18,6 @@ Release/
 *.pdb
 *.obj
 *.log
+
+# Explicit files
+Projektstruktur_export.txt
